@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyUserController {
+	
+
+	@GetMapping("four-wheeler/user/isValidUser")
+	public boolean checkUser(@RequestParam String uName,String password) {
+		
+		System.out.println("from React Data....>");
+		System.out.println("User Name....>"+uName);
+		System.out.println("Password....>"+password);
+		
+		return false;
+		
+	}
+
+}
